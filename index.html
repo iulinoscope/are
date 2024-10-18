@@ -107,28 +107,6 @@
 
         // Apelează funcția la încărcarea paginii
         window.onload = countVisitors;
-    </script><script>
-        // Funcția care numără vizitatorii
-        function countVisitors() {
-            // Obține numărul curent de vizitatori din localStorage
-            let visitorCount = localStorage.getItem('visitorCount');
-            
-            // Dacă nu există în localStorage, inițializează-l
-            if (!visitorCount) {
-                visitorCount = 0;
-            }
-
-            // Incrementează numărul de vizitatori
-            visitorCount++;
-            // Salvează-l în localStorage
-            localStorage.setItem('visitorCount', visitorCount);
-            
-            // Afișează numărul de vizitatori
-            document.getElementById('counter').innerText = "Număr de vizitatori: " + visitorCount;
-        }
-
-        // Apelează funcția la încărcarea paginii
-        window.onload = countVisitors;
     </script>
 </head>
 <body>
